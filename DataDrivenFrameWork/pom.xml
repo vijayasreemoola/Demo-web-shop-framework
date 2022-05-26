@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>DataDrivenFrameWork</groupId>
+  <artifactId>DataDrivenFrameWork</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+  
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+</dependency>
+
+<dependency>
+    <groupId>net.sourceforge.jexcelapi</groupId>
+    <artifactId>jxl</artifactId>
+    <version>2.6.12</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.14.3</version>
+    <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+<dependency>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.41.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.1.1</version>
+</dependency>
+
+
+        </dependencies>
+        
+  <build>
+    <plugins>
+       <plugin>
+       
+      <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>2.19</version>
+
+    <configuration>
+      <suiteXmlFiles>
+      <suiteXmlFiles>testng.xml</suiteXmlFiles>
+       </suiteXmlFiles>
+ 
+ 
+ </configuration>
+    </plugin>
+       </plugins>
+          </build>
+
+ <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.complier.source>1.8</maven.complier.source>
+    <maven.complier.target>1.8</maven.complier.target>
+    <libraties.directory>libraries</libraties.directory>
+ 
+ </properties>
+  
+</project>
